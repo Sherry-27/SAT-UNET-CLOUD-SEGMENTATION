@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: SAT-Unet-Cloud-Segmentation
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    numInstances: 1
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: 1
